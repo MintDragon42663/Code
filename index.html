@@ -15,7 +15,7 @@
             background: linear-gradient(135deg, #28555c 0%, #b2ebf2 100%);
             font-family: 'Arial', sans-serif;
             position: relative;
-            padding-bottom: 50px;
+            padding-bottom: 60px; /* Espacio para el footer */
         }
         
         .tarjetaPrincipal {
@@ -29,6 +29,7 @@
             backdrop-filter: blur(5px);
             border: 1px solid rgba(255, 255, 255, 0.3);
             margin-bottom: 20px;
+            z-index: 1;
         }
         
         .logo {
@@ -87,13 +88,16 @@
         }
         
         footer {
-            position: absolute;
+            position: fixed;
             bottom: 0;
             width: 100%;
             text-align: center;
             padding: 15px 0;
-            color: #000000;
+            color: #000000; /* Texto en negro */
             font-size: 14px;
+            background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+            backdrop-filter: blur(5px);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -124,7 +128,6 @@
     </footer>
 
     <script>
-        
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
