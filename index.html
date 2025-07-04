@@ -1,97 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotter AI - Visitor Identification</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MINTSPACE | Contacto</title>
     <style>
-        .spotter-gradient {
-            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #28555c 0%, #b2ebf2 100%);
+            font-family: 'Arial', sans-serif;
         }
-        .spotter-card {
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        
+        .tarjetaPrincipal {
+            width: 380px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 25px;
+            padding: 35px 30px;
+            box-shadow: 0 15px 30px rgba(66, 165, 245, 0.2);
+            text-align: center;
+            position: relative;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
-        .feature-icon {
-            background-color: rgba(37, 99, 235, 0.1);
+        
+        .logo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: -90px auto 20px;
+            border: 5px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 8px 20px rgba(2, 119, 189, 0.15);
+            background-color: #e1f5fe;
+        }
+        
+        .redSocial {
+            background-color: rgba(225, 245, 254, 0.7);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin: 18px 0;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 1px solid rgba(178, 235, 242, 0.5);
+        }
+        
+        .redSocial:hover {
+            background-color: rgba(207, 240, 254, 0.9);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(2, 136, 209, 0.1);
+        }
+        
+        .redSocial img {
+            width: 32px;
+            height: 32px;
+            margin-right: 15px;
+            object-fit: contain;
+        }
+        
+        h1 {
+            margin: 20px 0 10px;
+            color: #0277bd;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        p {
+            color: #4dd0e1;
+            margin-bottom: 25px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        .redSocial span {
+            color: #00838f;
+            font-weight: 500;
         }
     </style>
 </head>
-<body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
-    <div class="spotter-card max-w-4xl w-full bg-white rounded-xl overflow-hidden">
-        <!-- Header -->
-        <div class="spotter-gradient p-6 text-white">
-            <div class="flex items-center justify-between">
-                <h1 class="text-2xl font-bold">Spotter AI</h1>
-                <span class="bg-white/20 px-3 py-1 rounded-full text-sm">PROPRIETARY TECHNOLOGY</span>
-            </div>
-            <h2 class="mt-2 text-xl">The internet's most accurate visitor identifier</h2>
-            <p class="mt-1 opacity-90">Industry-leading accuracy that lasts for months or years, even when cookies are cleared.</p>
+<body>
+    <div class="tarjetaPrincipal">
+        <img src="/logo.png" alt="Logo MintSpace" class="logo">
+        <h1>MINTSPACE</h1>
+        <p>CONTÁCTANOS DESDE CUALQUIER RED</p>
+        
+        <div class="redSocial" onclick="window.open('https://www.instagram.com/mintspace_dev?igsh=eHNkOXptMjllNW8w', '_blank')">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            <span>@mintspace_dev</span>
         </div>
-
-        <!-- Main Content -->
-        <div class="p-6 md:p-8">
-            <!-- Section 1 -->
-            <div class="mb-8">
-                <h3 class="text-xl font-semibold text-gray-800 mb-3">Any browser, any device</h3>
-                <p class="text-gray-600">
-                    Identify returning web and mobile app visitors on all browsers, iOS, and Android, with exceptional accuracy.
-                </p>
-            </div>
-
-            <!-- Section 2 -->
-            <div class="mb-8 p-4 bg-blue-50 rounded-lg">
-                <div class="flex items-start">
-                    <div class="feature-icon p-2 rounded-full mr-3">
-                        <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                        </svg>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold text-gray-800">Identify all anonymous visitors</h4>
-                        <p class="text-gray-600 mt-1">
-                            Get details on suspicious visitors even when VPN, incognito mode, or a tampered browser/device is used.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Section 3 -->
-            <div class="mb-8">
-                <div class="flex items-start">
-                    <div class="feature-icon p-2 rounded-full mr-3">
-                        <svg class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
-                        </svg>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold text-gray-800">Delight your trusted users</h4>
-                        <p class="text-gray-600 mt-1">
-                            Personalize user experience and reduce 2FA and OTP requirements by identifying logged-out users.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Navigation Links -->
-            <div class="border-t pt-6">
-                <div class="flex flex-wrap gap-4 md:gap-6">
-                    <a href="#" class="text-blue-600 hover:underline font-medium">Technology</a>
-                    <a href="#" class="text-blue-600 hover:underline font-medium">Product</a>
-                    <a href="#" class="text-blue-600 hover:underline font-medium">Use Cases</a>
-                    <a href="#" class="text-blue-600 hover:underline font-medium">Developers</a>
-                    <a href="#" class="text-blue-600 hover:underline font-medium">Resources</a>
-                    <a href="#" class="text-blue-600 hover:underline font-medium">Demo</a>
-                    <a href="#" class="text-blue-600 hover:underline font-medium">Pricing</a>
-                </div>
-            </div>
-
-            <!-- CTA Button -->
-            <div class="mt-8">
-                <button class="spotter-gradient text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition w-full md:w-auto">
-                    Get Started with Spotter AI
-                </button>
-            </div>
+        
+        <div class="redSocial" onclick="window.open('https://www.facebook.com/share/16khqsDoN2/?mibextid=wwXIfr', '_blank')">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook">
+            <span>Facebook/MintSpace</span>
+        </div>
+        
+        <div class="redSocial" onclick="window.open('https://mintdragon42663.github.io/mintspace.github.io/', '_blank')">
+            <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" alt="Página Web">
+            <span>Visita nuestra web</span>
         </div>
     </div>
 </body>
